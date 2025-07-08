@@ -1,0 +1,32 @@
+.video-player-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-player {
+  width: 80%;
+  max-width: 1000px;
+}
+
+.close-player {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-player:hover {
+  color: #e50914;
+}
