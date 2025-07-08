@@ -1,0 +1,127 @@
+.upload-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e50914, #b81d24, #e50914);
+}
+
+.upload-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.upload-area {
+  border: 2px dashed #303030;
+  border-radius: 6px;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.upload-area:hover {
+  border-color: #e50914;
+  background-color: rgba(48, 48, 48, 0.3);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.upload-area p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.upload-area span {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+}
+
+.file-info {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 15px;
+  background-color: #303030;
+  border-radius: 4px;
+}
+
+.progress-container {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #303030;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #e50914, #b81d24);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #a3a3a3;
+}
+
+.upload-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.upload-btn:hover {
+  background-color: #f40612;
+  transform: scale(1.02);
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #2ecc71;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
